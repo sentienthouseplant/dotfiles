@@ -24,6 +24,8 @@
     ~/.zshrc: zshrc
     ~/.config/nvim: nvim
     ~/.config/opencode/opencode.json: opencode.json
+    ~/.config/kitty/current-theme.conf: current-theme.conf
+    ~/.config/kitty/kitty.conf: kitty.conf
 
 - create:
     ~/repos:
