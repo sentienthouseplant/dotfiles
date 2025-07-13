@@ -1,3 +1,19 @@
+- plugins:
+    - dotbot-brew/
+
+# Installs brew if missing
+- install-brew: true
+
+- brew:
+    - zsh
+    - eza
+    - zoxide
+    - bat
+    - uv
+
+- cask:
+  - kitty
+
 - clean: ['~']
 
 - link:
@@ -7,4 +23,5 @@
     ~/.zshenv: zshenv
     ~/.zshrc: zshrc
 
-
+- create:
+    ~/repos:
