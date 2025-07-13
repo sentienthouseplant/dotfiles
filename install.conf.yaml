@@ -23,6 +23,7 @@
     ~/.zshenv: zshenv
     ~/.zshrc: zshrc
     ~/.config/nvim: nvim
+    ~/.config/opencode/opencode.json: opencode.json
 
 - create:
     ~/repos:
