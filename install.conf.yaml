@@ -36,6 +36,7 @@
     ~/.zshrc: zshrc
     ~/.config/nvim: nvim
     ~/.config/opencode/opencode.json: opencode.json
+    ~/.config/opencode/AGENTS.md: AGENTS.md
     ~/.config/kitty/current-theme.conf: current-theme.conf
     ~/.config/kitty/kitty.conf: kitty.conf
     ~/.oh-my-zsh/custom/alises.zsh: alises.zsh
