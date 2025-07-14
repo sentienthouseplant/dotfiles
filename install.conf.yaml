@@ -4,6 +4,17 @@
 # Installs brew if missing
 - install-brew: true
 
+- shell:
+  - command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    description: Installs oh-my-zsh.
+  - command: git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    description: Installs zsh-autosuggestions
+  - command: git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    description: Installs zsh syntax highlighting
+  - command: git clone https://github.com/MichaelAquilina/zsh-you-should-use.git $ZSH_CUSTOM/plugins/you-should-use
+    description: Installs you-should-use plugin
+
+
 - brew:
     - zsh
     - eza
@@ -27,6 +38,7 @@
     ~/.config/opencode/opencode.json: opencode.json
     ~/.config/kitty/current-theme.conf: current-theme.conf
     ~/.config/kitty/kitty.conf: kitty.conf
+    ~/.oh-my-zsh/custom/alises.zsh: alises.zsh
 
 - create:
     ~/repos:
