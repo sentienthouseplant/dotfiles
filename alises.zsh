@@ -5,3 +5,9 @@ alias clr="clear" # Clear your terminal screen
 alias hm="z ~"
 alias gl='git log --pretty=format:"%h %ad %s" --date=short --all'
 alias nts='z ~/notes'
+
+#My custom functions:
+
+ask() {
+  gemini -p "Answer the following question and search the web if needed: $*" 2>/dev/null | tail -n +2 | glow - 
+}

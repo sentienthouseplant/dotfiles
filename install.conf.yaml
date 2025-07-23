@@ -22,6 +22,10 @@
     - bat
     - uv
     - starship
+    - ripgrep
+    - glow
+    - gemini
+    - sst/tap/opencode
 
 - cask:
   - kitty
