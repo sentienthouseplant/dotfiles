@@ -26,6 +26,7 @@
     - glow
     - gemini
     - sst/tap/opencode
+    - fd
 
 - cask:
   - kitty

@@ -4,3 +4,16 @@
 
 vim.lsp.enable("gdscript")
 vim.g.godot_executable = "/Applications/Godot.app/Contents/MacOS/Godot"
+
+require("snacks").setup({
+  -- your other snacks config...
+  explorer = {
+    -- your other explorer config...
+    filter = {
+      ignore = {
+        "%.uid$",
+        "server%.pipe",
+      },
+    },
+  },
+})
