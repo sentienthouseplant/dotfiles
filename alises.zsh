@@ -9,5 +9,5 @@ alias nts='z ~/notes'
 #My custom functions:
 
 ask() {
-  gemini -p "Answer the following question and search the web if needed: $*" 2>/dev/null | tail -n +2 | glow - 
+  gemini -p "Answer the following question and search the web if needed: $*" --model gemini-2.5-flash 2>/dev/null | tail -n +2 | glow - 
 }
